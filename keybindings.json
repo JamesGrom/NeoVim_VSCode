@@ -1,0 +1,25 @@
+[
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+{
+    "key": "alt+l",
+    "command": "workbench.action.navigateRight",
+},{
+    "key": "alt+k",
+    "command": "workbench.action.navigateUp",
+    "when": "editorTextFocus"
+},{
+    "key": "alt+j",
+    "command": "workbench.action.navigateDown",
+},{
+    "key": "alt+h",
+    "command": "workbench.action.navigateLeft",
+}]

@@ -1,0 +1,155 @@
+{
+    "editor.minimap.enabled": false,
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.incsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+
+        {
+            // make C-n the enter normal command
+            "before": [
+                "<C-n>"
+            ],
+            "after": [
+                "<C-o>"
+            ]
+        }
+    ],
+    "editor.lineNumbers": "relative",
+    "vim.leader": " ",
+    "terminal.integrated.localEchoExcludePrograms": [
+        "vim",
+        "vi",
+        "nano",
+        "tmux"
+    ],
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#ffff4d"
+    },
+    "editor.formatOnSave": true,
+    "vim.vimrc.enable": true,
+    "vim.easymotionMarkerBackgroundColor": "black",
+    "vim.easymotionMarkerForegroundColorOneChar": "#ffff4d",
+    "vim.vimrc.path": "~/.vimrc",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // Shift indexed movement shortcuts
+        {
+            // move to beggining of line (stays in normal mode)
+            "before": [
+                "H"
+        ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            // aaaaaaaaaaaaaaaa
+            //move to end of line (stays in normal mode) 
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "s"
+            ],
+            "after": [
+                "/"
+            ]
+        },
+        // cntrl indexed insert shortcuts
+        {
+            // enter insert mode at beginning of line
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "after": [
+                "^",
+                "i"
+            ]
+        },
+        {
+            // enter insert mode at end of line 
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "after": [
+                "$",
+                "a"
+            ]
+        },
+        {
+            //insert new line below current line
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "after": [
+                "o"
+            ]
+        },
+        {
+            // insert new line above current line
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "after": [
+                "O"
+            ]
+        },
+        // intrinsic easymotion mappings 
+        {
+            // Search!
+            // map f to easymotion search
+            "before": [
+                "f"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "f"
+            ]
+        },
+
+        {
+            // Search!
+            // map f to easymotion search
+            "before": [
+                "F"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "F"
+            ]
+        },
+        {
+            //goto (line navigation)
+            //map t to easymotion line jump 
+            "before": [
+                "t"
+            ],
+            "after": [
+                "f"
+            ]
+        }
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
